@@ -44,6 +44,7 @@ export default function NavPanelItem({ icon, title, href, children }: Props) {
       closeOnClickOutside={true}
       shadow='md'
       width={200}
+      trigger='hover'
     >
       <Menu.Target>
         <PureButton

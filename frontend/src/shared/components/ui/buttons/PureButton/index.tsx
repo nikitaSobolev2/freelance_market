@@ -22,7 +22,7 @@ const PureButton = forwardRef<HTMLButtonElement | HTMLAnchorElement, Props>(
       if (defaultProps.href !== undefined) {
         return (
           <Link
-            href={defaultProps.href}
+            href={defaultProps.href!}
             className={`${styles.pure_button} ${className}`}
             aria-disabled={disabled}
             tabIndex={disabled ? -1 : 1}

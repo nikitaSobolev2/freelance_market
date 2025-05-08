@@ -10,13 +10,14 @@ import styles from './styles.module.scss'
 interface Props {
   icon: IconProp
   title: string
-  href: Url
+  href: Url,
+  className?: string
 }
 
-export default function NavPanelItemOption({ icon, title, href }: Props) {
+export default function NavPanelItemOption({ icon, title, href, className }: Props) {
   return (
     <Menu.Item
-      className={styles.list__item}
+      className={`${styles.list__item} ${className}`}
       component={Link}
       href={href}
       leftSection={<FontAwesomeIcon icon={icon} />}

@@ -16,6 +16,6 @@
   font-weight: 400;
 
   &[aria-disabled='true'] {
-    pointer-events: none;
+    cursor: default;
   }
 }

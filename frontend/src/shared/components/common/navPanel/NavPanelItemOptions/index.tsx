@@ -2,12 +2,17 @@
 
 import { Menu } from '@mantine/core'
 import NavPanelItemOption from '../NavPanelItemOption'
+import NavPanelItemOptionsGroup from '../NavPanelItemOptionsGroup'
 import styles from './styles.module.scss'
 
-export type ChildType = typeof NavPanelItemOption
+export type OptionChildType = typeof NavPanelItemOption
+export type OptionGroupChildType = typeof NavPanelItemOptionsGroup
 
 export interface Props {
-  children: React.ReactElement<ChildType> | React.ReactElement<ChildType>[]
+  children: React.ReactElement<OptionChildType>
+  | React.ReactElement<OptionChildType>[]
+  | React.ReactElement<OptionGroupChildType>
+  | React.ReactElement<OptionGroupChildType>[]
 }
 
 export default function NavPanelItemOptions({ children }: Props) {

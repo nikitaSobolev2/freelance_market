@@ -1,0 +1,7 @@
+.list__item {
+
+    &:hover,
+    &:focus-visible {
+        background: var(--color-el-bg-active);
+    }
+}

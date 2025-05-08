@@ -10,6 +10,7 @@
   justify-content: center;
   border-radius: var(--border-radius-button);
   cursor: pointer;
+  font-size: var(--font-size-default);
 
   &:hover,
   &:focus:focus-visible {
