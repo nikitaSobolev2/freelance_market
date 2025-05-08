@@ -3,7 +3,7 @@
 import styles from './styles.module.scss'
 import IconButton from '@/shared/components/ui/buttons/IconButton'
 import { faApple, faGoogle } from '@fortawesome/free-brands-svg-icons'
-import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 interface Props {
   className?: string,
@@ -28,6 +28,11 @@ export default function LoginMethodsBlock({ className = '', title = 'Выбер�
         <li className={styles.login_methods_block__item}>
           <IconButton icon={faPhone} className={styles.login_methods_block__button} >
             <span>Продолжить через телефон</span>
+          </IconButton>
+        </li>
+        <li className={styles.login_methods_block__item}>
+          <IconButton icon={faEnvelope} className={styles.login_methods_block__button} >
+            <span>Продолжить через почту</span>
           </IconButton>
         </li>
       </ul>
