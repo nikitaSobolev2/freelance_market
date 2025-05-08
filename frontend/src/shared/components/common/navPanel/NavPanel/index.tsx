@@ -10,7 +10,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import NavPanelList from '../NavPanelList'
 import NavPanelItem from '../NavPanelItem'
-import NavPanelItemOptions from '../NavPanelItemOptions'
 import NavPanelItemOption from '../NavPanelItemOption'
 import styles from './styles.module.scss'
 
@@ -22,24 +21,20 @@ export default function NavPanel({}: Props) {
       <NavPanelList>
         <NavPanelItem href='/' title='Главная' icon={faHouse} />
         <NavPanelItem href='/market' title='Биржа' icon={faStore}>
-          <NavPanelItemOptions>
-            <NavPanelItemOption
-              icon={faHouse}
-              title={'Главная'}
-              onClick={() => {}}
-            />
-          </NavPanelItemOptions>
+          <NavPanelItemOption
+            icon={faHouse}
+            title={'Главная'}
+            onClick={() => {}}
+          />
         </NavPanelItem>
         <NavPanelItem href='/stats' title='Статистика' icon={faChartLine} />
         <NavPanelItem href='/chats' title='Чаты' icon={faComments} />
         <NavPanelItem href='/profile' title='Профиль' icon={faUser}>
-          <NavPanelItemOptions>
-            <NavPanelItemOption
-              icon={faHouse}
-              title={'Главная'}
-              onClick={() => {}}
-            />
-          </NavPanelItemOptions>
+          <NavPanelItemOption
+            icon={faHouse}
+            title={'Главная'}
+            onClick={() => {}}
+          />
         </NavPanelItem>
       </NavPanelList>
     </nav>

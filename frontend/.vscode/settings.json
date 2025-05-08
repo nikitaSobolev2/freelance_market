@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.dll": "code-text-binary",
+        "map": "cpp"
+    }
+}
