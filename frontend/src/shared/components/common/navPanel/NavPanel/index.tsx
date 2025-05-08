@@ -7,6 +7,8 @@ import {
   faRightToBracket,
   faStore,
   faUser,
+  faPlus,
+  faLayerGroup
 } from '@fortawesome/free-solid-svg-icons'
 import NavPanelList from '../NavPanelList'
 import NavPanelItem from '../NavPanelItem'
@@ -22,17 +24,17 @@ export default function NavPanel({}: Props) {
         <NavPanelItem href='/' title='Главная' icon={faHouse} />
         <NavPanelItem href='/market' title='Биржа' icon={faStore}>
           <NavPanelItemOption
-            icon={faHouse}
-            title={'Каталог'}
+            icon={faStore}
+            title={'Биржа'}
             href='/'
           />
           <NavPanelItemOption
-            icon={faHouse}
+            icon={faLayerGroup}
             title={'Мои заказы'}
             href='/'
           />
           <NavPanelItemOption
-            icon={faHouse}
+            icon={faPlus}
             title={'Новый кворум'}
             href='/'
           />

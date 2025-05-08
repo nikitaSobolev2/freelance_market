@@ -7,7 +7,7 @@ import styles from './styles.module.scss'
 export default function HeroBlock() {
   return (
     <section className={styles.hero_section}>
-      <h1 className={styles.hero_section__title}>Workerss</h1>
+      <h1 className={styles.hero_section__title}>WorkQuorum</h1>
       <h4 className={styles.hero_section__subtitle}>
         Фриланс маркет для эффективного роста и успеха
       </h4>
