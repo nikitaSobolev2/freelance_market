@@ -7,8 +7,15 @@ import AccentButton, {
 export interface Props extends ButtonProps {}
 
 export default function GoTopButton(props: ButtonProps) {
+  const handleClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  }
+
   return (
-    <AccentButton {...props}>
+    <AccentButton {...props} onClick={handleClick}>
       <FontAwesomeIcon icon={faAnglesUp} />
       Наверх
     </AccentButton>

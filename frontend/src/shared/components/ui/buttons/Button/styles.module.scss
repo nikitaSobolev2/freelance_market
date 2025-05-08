@@ -9,6 +9,7 @@
   padding: 0.75em 1.25em;
   justify-content: center;
   border-radius: var(--border-radius-button);
+  cursor: pointer;
 
   &:hover,
   &:focus:focus-visible {
