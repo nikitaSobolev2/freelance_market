@@ -23,6 +23,7 @@ interface Props {
 export default function NavPanelItem({ icon, title, href, children }: Props) {
   const { isActive: isLinkActive } = useLinkActivity(href)
   const [isOptionsActive, setIsOptionsActive] = useState<boolean>(false)
+  const hasChildren = children && Children.count(children) > 0
 
   const contextMenuHandler = (e: React.MouseEvent) => {
     e.preventDefault()
@@ -49,7 +50,11 @@ export default function NavPanelItem({ icon, title, href, children }: Props) {
           disabled={isLinkActive}
           href={href}
           label={title}
-          className={`${styles.item__btn} ${
+          className={`${styles.item__btn} 
+          ${
+            hasChildren ? styles.item__btn_with_children : ''
+          } 
+          ${
             isLinkActive ? styles.btn_active : ''
           }`}
           onContextMenu={contextMenuHandler}
@@ -57,7 +62,7 @@ export default function NavPanelItem({ icon, title, href, children }: Props) {
           <FontAwesomeIcon icon={icon} className={styles.btn__icon} />
         </PureButton>
       </Menu.Target>
-      {children && Children.count(children) > 0 && (
+      {hasChildren && (
         <NavPanelItemOptions>{children}</NavPanelItemOptions>
       )}
     </Menu>

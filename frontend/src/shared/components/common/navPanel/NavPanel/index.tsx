@@ -23,7 +23,17 @@ export default function NavPanel({}: Props) {
         <NavPanelItem href='/market' title='Биржа' icon={faStore}>
           <NavPanelItemOption
             icon={faHouse}
-            title={'Главная'}
+            title={'Каталог'}
+            href='/'
+          />
+          <NavPanelItemOption
+            icon={faHouse}
+            title={'Мои заказы'}
+            href='/'
+          />
+          <NavPanelItemOption
+            icon={faHouse}
+            title={'Новый кворум'}
             href='/'
           />
         </NavPanelItem>
