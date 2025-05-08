@@ -1,8 +1,12 @@
 .main {
 
     .main__section {
+        margin-top: 5vh;
 
-        
+        .main__title {
+            font-size: var(--font-size-h2);
+        }
+
         .main__login_methods {
             margin-top: 2em;
         }

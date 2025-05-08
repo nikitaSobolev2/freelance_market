@@ -12,7 +12,7 @@ export default function LoginLayout() {
   return (
     <main className={styles.main}>
       <section className={styles.main__section}>
-        <h1 className={styles.main__title}>Вход или Регистрация</h1>
+        <h1 className={styles.main__title}>Вход или<br/>Регистрация</h1>
         <Form className={styles.main__form}>
           <LabeledInput placeholder='Email' label={<IconBadge icon={faEnvelope} />} type='email' />
           <AccentButton>Продолжить</AccentButton>
