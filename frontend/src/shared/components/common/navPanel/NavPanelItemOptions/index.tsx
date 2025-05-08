@@ -5,14 +5,14 @@ import NavPanelItemOption from '../NavPanelItemOption'
 import NavPanelItemOptionsGroup from '../NavPanelItemOptionsGroup'
 import styles from './styles.module.scss'
 
-export type OptionChildType = typeof NavPanelItemOption
-export type OptionGroupChildType = typeof NavPanelItemOptionsGroup
+type OptionChildType = typeof NavPanelItemOption
+type OptionGroupChildType = typeof NavPanelItemOptionsGroup
+
+export type ChildType = OptionChildType | OptionGroupChildType
 
 export interface Props {
-  children: React.ReactElement<OptionChildType>
-  | React.ReactElement<OptionChildType>[]
-  | React.ReactElement<OptionGroupChildType>
-  | React.ReactElement<OptionGroupChildType>[]
+  children: React.ReactElement<ChildType>
+  | React.ReactElement<ChildType>[]
 }
 
 export default function NavPanelItemOptions({ children }: Props) {

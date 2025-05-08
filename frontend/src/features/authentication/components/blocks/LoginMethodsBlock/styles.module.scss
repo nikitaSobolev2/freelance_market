@@ -1,0 +1,28 @@
+@import "/src/shared/assets/styles/mixins";
+
+.login_methods_block {
+    @include bluredBg;
+    @include mainShadow;
+
+    border-radius: var(--border-radius-input-rounded);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    .login_methods_block__title {
+        font-size: var(--font-size-h5);
+        color: var(--color-text-secondary);
+        text-align: center;
+    }
+
+    .login_methods_block__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+    .login_methods_block__button {
+        width: 100%;
+    }
+}

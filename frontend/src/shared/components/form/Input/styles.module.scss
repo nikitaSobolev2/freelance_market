@@ -3,7 +3,7 @@
 .input {
   @include bluredBg;
 
-  border-radius: var(--border-radius-button);
+  border-radius: var(--border-radius-input);
   color: var(--color-text);
   padding: 0.5rem 1.5rem;
   font-size: var(--font-size-default);
@@ -12,5 +12,9 @@
 
   &::placeholder {
     color: var(--color-text-secondary);
+  }
+
+  &:read-only {
+    background: var(--color-el-bg-active);
   }
 }

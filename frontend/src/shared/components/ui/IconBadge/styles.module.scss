@@ -1,0 +1,18 @@
+@import '/src/shared/assets/styles/mixins';
+
+
+.icon_badge {
+  background: var(--color-secondary);
+  color: var(--color-accent);
+  border-radius: var(--border-radius-input-rounded);
+  padding: .65em;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .icon_badge__icon {
+    font-size: var(--font-size-h4);
+    width: 1em;
+  }
+}

@@ -1,0 +1,36 @@
+@import '/src/shared/assets/styles/mixins';
+
+.icon_button {
+  --hover-bg: var(--color-el-bg-active);
+  --hover-color: var(--color-text);
+
+  @include bluredBg;
+
+  padding: 0.45em 1.25em;
+  border-radius: var(--border-radius-button);
+  cursor: pointer;
+  font-size: var(--font-size-default);
+  color: var(--color-text);
+  background: var(--color-el-bg);
+  display: grid;
+  place-items: center;
+  grid-template-columns: 2em auto;
+  gap: 1em;
+  align-items: stretch;
+
+  &:hover,
+  &:focus:focus-visible {
+    background: var(--hover-bg);
+    color: var(--hover-color);
+  }
+
+  .icon_button__icon {
+    font-size: var(--font-size-default);
+  }
+
+  .icon_button__label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
