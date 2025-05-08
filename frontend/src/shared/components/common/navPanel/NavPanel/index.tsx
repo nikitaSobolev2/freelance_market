@@ -24,7 +24,7 @@ export default function NavPanel({}: Props) {
           <NavPanelItemOption
             icon={faHouse}
             title={'Главная'}
-            onClick={() => {}}
+            href='/'
           />
         </NavPanelItem>
         <NavPanelItem href='/stats' title='Статистика' icon={faChartLine} />
@@ -33,7 +33,7 @@ export default function NavPanel({}: Props) {
           <NavPanelItemOption
             icon={faHouse}
             title={'Главная'}
-            onClick={() => {}}
+            href='/'
           />
         </NavPanelItem>
       </NavPanelList>

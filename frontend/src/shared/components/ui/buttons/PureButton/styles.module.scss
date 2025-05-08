@@ -13,7 +13,6 @@
   @include buttonReset;
 
   color: var(--color-text);
-  font-size: var(--font-size-default);
   font-weight: 400;
 
   &[aria-disabled='true'] {

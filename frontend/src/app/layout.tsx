@@ -1,8 +1,8 @@
+import '@mantine/core/styles.layer.css';
 import '../shared/assets/styles/normalize.scss'
 import '../shared/assets/styles/fonts.scss'
 import '../shared/assets/styles/variables.scss'
 import '../shared/assets/styles/globals.scss'
-import '@mantine/core/styles.layer.css';
 import type { Metadata } from 'next'
 import { MantineProvider } from '@mantine/core'
 import SiteSeachHeader from '@/shared/components/common/header/SiteSeachHeader'
