@@ -10,7 +10,7 @@ export interface Props {
   className?: string
 }
 
-export default function LabeledInputGroup({ children, className }: Props) {
+export default function LabeledInputGroup({ children=null, className='' }: Props) {
   return (
     <fieldset className={`${styles.labeled_input_group} ${className}`}>
       {children}
