@@ -10,8 +10,8 @@
   &:has(:nth-child(2)) {
 
     & > * {
-      display: grid;
-      grid-template-columns: 3fr 7fr;
+      // display: grid;
+      // grid-template-columns: 3fr 7fr;
       box-shadow: none;
 
       &:not(:first-child),

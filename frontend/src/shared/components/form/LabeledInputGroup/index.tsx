@@ -3,10 +3,10 @@
 import { Props as LabeledInputProps } from '../LabeledInput'
 import styles from './styles.module.scss'
 
-export type ChildType = LabeledInputProps
+export type ChildType = React.ReactElement<LabeledInputProps> | undefined | null | string
 
 export interface Props {
-  children?: React.ReactElement<ChildType> | React.ReactElement<ChildType>[],
+  children?: ChildType | ChildType[],
   className?: string
 }
 

@@ -1,8 +1,11 @@
-// .input_field {
-//     display: grid;
-//     grid-template-columns: 3fr 7fr;
-// }
-.password_group {
+.form {
+  .input_field {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+  }
+}
+
+.fullname_group {
     margin-top: 1em;
 }
 
