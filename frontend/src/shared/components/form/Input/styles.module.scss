@@ -9,6 +9,7 @@
   font-size: var(--font-size-default);
   outline: transparent;
   border: none;
+  min-width: 5em;
 
   &::placeholder {
     color: var(--color-text-secondary);

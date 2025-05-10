@@ -1,18 +1,17 @@
-import LoginMethodsBlock from '@/features/authentication/components/blocks/LoginMethodsBlock'
 import LoginLayout from '@/features/authentication/pages/LoginLayout'
 import Form from '@/shared/components/form/Form'
 import AccentButton from '@/shared/components/ui/buttons/AccentButton'
-import styles from './styles.module.scss'
+import PasswordField from '@/features/authentication/components/form/PasswordField'
 import UsernameField from '@/features/authentication/components/form/UsernameField'
 
-export default function Login() {
+export default function LoginUsername() {
   return (
-  <LoginLayout title="Вход или Регистрация">
+  <LoginLayout title="Вход через логин и пароль">
     <Form>
       <UsernameField/>
+      <PasswordField/>
       <AccentButton>Продолжить</AccentButton>
     </Form>
-    <LoginMethodsBlock className={styles.login_methods} title='Или войти другим способом:' />
   </LoginLayout>
   )
 }

@@ -1,18 +1,19 @@
-import LoginMethodsBlock from '@/features/authentication/components/blocks/LoginMethodsBlock'
 import LoginLayout from '@/features/authentication/pages/LoginLayout'
 import Form from '@/shared/components/form/Form'
 import AccentButton from '@/shared/components/ui/buttons/AccentButton'
-import styles from './styles.module.scss'
 import UsernameField from '@/features/authentication/components/form/UsernameField'
+import PasswordGroup from '@/features/authentication/components/form/PasswordGroup'
+import styles from './styles.module.scss'
 
-export default function Login() {
+export default function Signup() {
   return (
-  <LoginLayout title="Вход или Регистрация">
+  <LoginLayout title="Регистрация">
     <Form>
-      <UsernameField/>
+      <UsernameField readOnly={true} className={styles.input_field}/>
+      <PasswordGroup className={styles.password_group} fieldClassName={styles.input_field}/>
+      
       <AccentButton>Продолжить</AccentButton>
     </Form>
-    <LoginMethodsBlock className={styles.login_methods} title='Или войти другим способом:' />
   </LoginLayout>
   )
 }
