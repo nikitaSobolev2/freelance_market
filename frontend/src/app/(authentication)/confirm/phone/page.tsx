@@ -9,7 +9,7 @@ export default function ConfirmPhone() {
   <LoginLayout title="Подтверждение номера телефона">
     <Form>
       <PhoneField readOnly={true} />
-      <CodeInput label='Введите код подтверждения из сообщения' length={6} />
+      <CodeInput label='Введите код подтверждения из СМС' length={6} />
       <AccentButton>Продолжить</AccentButton>
     </Form>
   </LoginLayout>

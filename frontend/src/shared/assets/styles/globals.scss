@@ -1,5 +1,16 @@
 @import './mixins';
 
+*,
+*::before,
+*::after {
+  caret-color: var(--color-accent);
+  
+  ::selection {
+    background: var(--color-accent);
+    color: #fff;
+  }
+}
+
 body {
   position: relative;
   background: var(--color-bg);
